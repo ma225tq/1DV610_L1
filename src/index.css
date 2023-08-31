@@ -5,9 +5,57 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hello-container {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 30vw;
+  background-color: #5fc9ec;
+  border-radius: 10px;
+}
+
+.hello-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hello-message {
+  font-size: 18px;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+.name-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.greet-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.greeting {
+  font-size: 20px;
+  margin-top: 20px;
 }
