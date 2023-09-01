@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import ReturnHello from './hello.js';
+
+import ParentComponent from './Components/parent';
 
 function App() {
   return (
     <div className="App">
-      <ReturnHello />
+      {/* <ReturnHello /> */}
+      <ParentComponent />
     </div>
   );
 }
