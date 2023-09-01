@@ -7,11 +7,10 @@ function ImageCreator({ prompt, setImage }) {
     dangerouslyAllowBrowser: true,
   })
 
-  console.log('hello from image-creator.js')
+
 
   React.useEffect(() => {
     handleImage()
-    console.log('balls 2')
   }, [prompt])
 
   const handleImage = async (event) => {
@@ -22,7 +21,6 @@ function ImageCreator({ prompt, setImage }) {
         size: '256x256',
       })
       setImage(image.data[0].url)
-      console.log(image.data[0].url)
     } else {
       setImage('Something went wrong!')
     }
