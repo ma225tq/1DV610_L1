@@ -1,6 +1,6 @@
 import react from 'react'
 
-function ReturnHello({ setPrompt, image }) {
+function ReturnHello({ setPrompt, image, setImage }) {
   const [name, setName] = react.useState('')
   const [greeting, setGreeting] = react.useState('')
   const [loading, setLoading] = react.useState(false)
@@ -14,10 +14,11 @@ function ReturnHello({ setPrompt, image }) {
       setGreeting(`Hello, ${name}! Here's what DALL-E generated from your name. It probably doesn't make sense.`);
       setPrompt(name);
       setLoading(true);
+      setImage(null)
 
       setTimeout(() => {
         setLoading(false);
-      }, 2000);
+      }, 4000);
     } else {
       setGreeting('Enter your name first!');
     }

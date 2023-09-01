@@ -11,7 +11,7 @@ function ParentComponent() {
 
   return (
     <div>
-      <ReturnHello name={name} setPrompt={ setPrompt } image={image} />
+      <ReturnHello name={name} setPrompt={ setPrompt } image={image} setImage={setImage} />
       <ImageCreator prompt={prompt} setImage={setImage} />
     </div>
   )
