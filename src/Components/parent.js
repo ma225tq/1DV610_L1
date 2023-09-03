@@ -1,11 +1,11 @@
-import React from 'react'
-import ReturnHello from './hello'
+import react from 'react'
+import ReturnHello from './return-hello'
 import ImageCreator from './image-creator'
 
-function ParentComponent() {
-  const [name, setName] = React.useState('')
-  const [prompt, setPrompt] = React.useState('')
-  const [image, setImage] = React.useState('')
+function Parent() {
+  const [name] = react.useState('')
+  const [prompt, setPrompt] = react.useState('')
+  const [image, setImage] = react.useState('')
 
 
 
@@ -17,4 +17,4 @@ function ParentComponent() {
   )
 }
 
-export default ParentComponent
+export default Parent

@@ -1,4 +1,4 @@
-import React from 'react'
+import react from 'react'
 import OpenAI from 'openai'
 
 function ImageCreator({ prompt, setImage }) {
@@ -9,7 +9,7 @@ function ImageCreator({ prompt, setImage }) {
 
 
 
-  React.useEffect(() => {
+  react.useEffect(() => {
     handleImage()
   }, [prompt])
 
@@ -22,7 +22,7 @@ function ImageCreator({ prompt, setImage }) {
       })
       setImage(image.data[0].url)
     } else {
-      setImage('Something went wrong!')
+      console.log('Something went wrong!')
     }
   }
 }
